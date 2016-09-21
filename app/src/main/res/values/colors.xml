@@ -3,4 +3,67 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="overlay">#66000000</color>
+    <color name="black">#000</color>
+    <color name="background">#fff</color>
+    <color name="white">#fff</color>
+    <color name="grey">#999</color>
+    <color name="shadow1">#99000000</color>
+    <color name="shadow2">#66000000</color>
+    <color name="shadow3">#33000000</color>
+    <color name="indicator_green">#FF6AC73C</color>
+
+    <!-- VSG colours -->
+    <!-- Primary -->
+    <color name="dark_blue">#172E4D</color>
+    <color name="link_blue">#4B97FA</color>
+    <color name="link_blue_pressed">#3469af</color>
+    <color name="link_red">#CE210F</color>
+    <color name="pencil_grey">#666666</color>
+    <color name="warm_red">#CE210F</color>
+    <color name="warm_red_pressed">#90170a</color>
+    <color name="cream">#FFFFBB</color>
+
+    <!-- Secondary -->
+    <color name="blue_wash">#E6EBF0</color>
+    <color name="blue_wash_pressed">#99E6EBF0</color>
+    <color name="light_pink">#FFDDDD</color>
+    <color name="dark_red">#880000</color>
+    <color name="light_grey">#F0F0F0</color>
+    <color name="light_grey_pressed">#a8a8a8</color>
+    <color name="desaturated_blue">#A2A2A2</color>
+    <color name="desaturated_blue_pressed">#99A2A2A2</color>
+    <color name="half_blue">#A6CAFA</color>
+    <color name="mid_grey">#E0E0E0</color>
+    <color name="mid_grey_pressed">#99E0E0E0</color>
+
+    <!-- Contextual home page colours -->
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white_opacity20">#33FFFFFF</color>
+    <color name="white_opacity30">#4DFFFFFF</color>
+    <color name="white_opacity35">#59FFFFFF</color>
+    <color name="white_opacity40">#66FFFFFF</color>
+    <color name="white_opacity50">#80FFFFFF</color>
+    <color name="white_opacity60">#99FFFFFF</color>
+    <color name="white_opacity90">#E6FFFFFF</color>
+    <color name="black_opacity20">#40000000</color>
+    <color name="black_opacity30">#4D000000</color>
+    <color name="black_opacity40">#66000000</color>
+    <color name="black_opacity50">#80000000</color>
+    <color name="black_opacity60">#99000000</color>
+    <color name="black_opacity68">#AE000000</color>
+    <color name="black_opacity70">#B4000000</color>
+    <color name="black_opacity80">#CC000000</color>
+    <color name="black_opacity85">#da000000</color>
+    <color name="pencil_grey_opacity50">#80666666</color>
+    <color name="pencil_grey_opacity60">#99666666</color>
+    <color name="link_blue_opacity90">#E64B97FA</color>
+    <color name="link_blue_opacity50">#804b97fa</color>
+    <color name="dark_blue_opacity30">#4D172e4d</color>
+    <color name="dark_blue_opacity60">#99172e4d</color>
+    <color name="dark_blue_opacity90">#E6172e4d</color>
+    <color name="grey_shade_opacity50">#80cbdaea</color>
+    <color name="link_red_opacity90">#E6CE210F</color>
+    <color name="dark_red_opacity60">#99CE210F</color>
 </resources>
