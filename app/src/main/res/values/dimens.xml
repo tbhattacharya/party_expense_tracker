@@ -26,4 +26,15 @@
     <dimen name="grid_spacing_half">4dp</dimen>
     <dimen name="grid_spacing_decuple">80dp</dimen>
     <dimen name="grid_spacing_three_quarter">6dp</dimen>
+
+    <dimen name="text_size_very_large">30sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_very_small">12sp</dimen>
+    <dimen name="text_size_tiny">10sp</dimen>
+
+    <!-- Splash -->
+    <dimen name="splash_loader">150dp</dimen>
 </resources>
