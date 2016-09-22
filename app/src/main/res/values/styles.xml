@@ -2,10 +2,18 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <!-- This disables the black preview screen -->
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/white</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/link_blue_opacity90</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -20,5 +28,260 @@
     <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- content -->
+    <style name="Header">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Header.Grey">
+        <item name="android:textColor">@color/pencil_grey</item>
+    </style>
+
+    <style name="Header.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Header.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Header.Medium.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Header.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Header.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Header.Bold.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Header.Bold.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Header.Bold.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Header.Bold.Padding">
+        <item name="android:paddingLeft">@dimen/grid_spacing_half</item>
+        <item name="android:paddingRight">@dimen/grid_spacing_half</item>
+    </style>
+
+    <style name="Header.Bold.Padding.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Header.Large.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Header.Bold.Large.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Header.Bold.Medium.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Header.Bold.Small.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content">
+        <item name="android:textColor">@color/pencil_grey</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Content.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.Blue.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.LinkBlue.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Content.Blue.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Content.Blue.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.LinkBlue.VeryLarge">
+        <item name="android:textSize">@dimen/text_size_very_large</item>
+    </style>
+
+    <style name="Content.LinkBlue.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Content.LinkBlue.VerySmall">
+        <item name="android:textSize">@dimen/text_size_very_small</item>
+    </style>
+
+    <style name="Content.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Content.Small.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Small.Grey">
+        <item name="android:textColor">@color/pencil_grey</item>
+    </style>
+
+    <style name="Content.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Content.Medium.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Medium.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.Medium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.Medium.Bold.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.Medium.Bold.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.Medium.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.Bold.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.Bold.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Bold.Padding">
+        <item name="android:paddingLeft">@dimen/grid_spacing_half</item>
+        <item name="android:paddingRight">@dimen/grid_spacing_half</item>
+    </style>
+
+    <style name="Content.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.Small.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Small.Bold.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.Small.Bold.Grey">
+        <item name="android:textColor">@color/pencil_grey</item>
+    </style>
+
+    <style name="Content.Small.Bold.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.Small.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.Small.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.VerySmall">
+        <item name="android:textSize">@dimen/text_size_very_small</item>
+    </style>
+
+    <style name="Content.VerySmall.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Content.VerySmall.Grey">
+        <item name="android:textColor">@color/pencil_grey</item>
+    </style>
+
+    <style name="Content.VerySmall.Blue">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="Content.VerySmall.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.VerySmall.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.VeryLarge">
+        <item name="android:textSize">@dimen/text_size_very_large</item>
+    </style>
+
+    <style name="Content.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Content.Large.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Content.Large.White.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Content.VerySmall.Bold.Grey">
+        <item name="android:textColor">@color/pencil_grey</item>
+    </style>
+
+    <style name="Content.VerySmall.Bold.LinkBlue">
+        <item name="android:textColor">@color/link_blue</item>
+    </style>
+
+    <style name="Content.VerySmall.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 
 </resources>

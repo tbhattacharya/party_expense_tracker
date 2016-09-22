@@ -17,6 +17,8 @@ public class ExpenseShareApplication extends Application{
         return mInstance;
     }
 
+    private boolean initDone = false;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -33,6 +35,7 @@ public class ExpenseShareApplication extends Application{
         @Override
         protected Void doInBackground(Void... params) {
             init();
+            initDone = true;
             return null;
         }
 
@@ -40,5 +43,13 @@ public class ExpenseShareApplication extends Application{
         protected void onPostExecute(Void aVoid) {
             SplashActivity.launchHomeScreen();
         }
+    }
+
+    public boolean isInitDone() {
+        return initDone;
+    }
+
+    public void setInitDone(boolean initDone) {
+        this.initDone = initDone;
     }
 }
