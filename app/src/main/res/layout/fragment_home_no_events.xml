@@ -1,20 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.expense.tamal.expenseshare.fragments.HomeNoEventsFragment">
 
-    <ImageSwitcher
-        android:id="@+id/imageSwitcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" >
-    </ImageSwitcher>
+    <com.expense.tamal.expenseshare.views.SlideShowView
+        android:id="@+id/slide_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/add_events"
+        style="@style/AddEvents"
+        android:layout_below="@id/slide_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/grid_spacing_double"
+        android:text="@string/add_first_event" />
+
+    <TextView
+        style="@style/Content.Small.White"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/add_events"
+        android:text="@string/home_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</LinearLayout>

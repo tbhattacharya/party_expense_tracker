@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--No events -->
+    <string name="add_first_event">Add your first event</string>
+    <string name="add_new_event">Add new event</string>
+
+    <string-array name="steps_array">
+        <item> Create your Events</item>
+        <item>Add the members for the event</item>
+        <item>Add the items and cost</item>
+        <item>Calculate the cost</item>
+    </string-array>
+    <string name="home_message">Let the app worry about the calculations so that you can enjoy the finer things!</string>
+</resources>

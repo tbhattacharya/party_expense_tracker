@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.expense.tamal.expenseshare.fragments.HomeClosedEventsFragment">
+
+    <com.expense.tamal.expenseshare.views.SlideShowView
+        android:id="@+id/slide_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/add_events"
+        style="@style/AddEvents"
+        android:layout_below="@id/slide_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/grid_spacing_double"
+        android:text="@string/add_new_event" />
+
+    <ListView
+        android:id="@+id/previous_events"
+        android:layout_margin="@dimen/grid_spacing"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

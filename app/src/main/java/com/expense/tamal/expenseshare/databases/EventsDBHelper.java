@@ -15,6 +15,7 @@ public class EventsDBHelper {
                 + EventsTable.EVENT_TYPE + "varchar2, "
                 + EventsTable.EVENT_COST + "varchar2, "
                 + EventsTable.EVENT_CURRENCY + "varchar2, "
+                + EventsTable.EVENT_BUDGET + "varchar2, "
                 + EventsTable.EVENT_PHOTO + "varchar2);";
     }
 
@@ -28,5 +29,6 @@ public class EventsDBHelper {
         public static final String EVENT_COST = "EVENT_COST";
         public static final String EVENT_CURRENCY = "EVENT_CURRENCY";
         public static final String EVENT_PHOTO = "EVENT_PHOTO";
+        public static final String EVENT_BUDGET = "EVENT_BUDGET";
     }
 }
