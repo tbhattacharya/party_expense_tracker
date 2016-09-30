@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/black">
+
+    <ImageView
+        android:id="@+id/steps_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/steps_height"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/step_1" />
+
+    <TextView
+        android:id="@+id/process_steps"
+        style="@style/Content.Small.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        tools:text="Step 1" />
+
+</LinearLayout>

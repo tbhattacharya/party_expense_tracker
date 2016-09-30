@@ -18,15 +18,20 @@ import com.expense.tamal.expenseshare.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class SplashActivity extends AppCompatActivity {
 
     private static final float ROTATE_FROM = 0.0f;
 
     private static final float ROTATE_TO = 360.0f;
 
-    private ViewFlipper mViewFlipper;
+    @BindView(R.id.viewFlipper)
+    ViewFlipper mViewFlipper;
 
-    private ImageView mProgressImage;
+    @BindView(R.id.loading_spinner)
+    ImageView mProgressImage;
 
     public static Activity context;
 
@@ -34,11 +39,8 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        ButterKnife.bind(this);
         context = this;
-        mProgressImage = (ImageView)
-                findViewById(R.id.loading_spinner);
-        mViewFlipper = (ViewFlipper)
-                findViewById(R.id.viewFlipper);
         startRotateAnimation(mProgressImage);
         startFlipping();
     }
