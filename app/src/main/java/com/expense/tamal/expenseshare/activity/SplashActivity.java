@@ -59,6 +59,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 context.startActivity(HomeActivity.getHomeActivityIntent(context));
+                context.overridePendingTransition(R.anim.fade_in,
+                        R.anim.fade_out);
                 timer.cancel();
                 context.finish();
             }

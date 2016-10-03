@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="tierpoint_circle_size">50</integer>
+    <integer name="thumb_padding">20</integer>
+	<integer name="thumb_alpha_interval">18</integer>
+    <integer name="fs_custom_keyboard_scroll_code">500</integer>
+    <integer name="fs_custom_keyboard_scroll_number">100</integer>
+
+</resources>
