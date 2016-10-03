@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 
 import com.expense.tamal.expenseshare.R;
 import com.expense.tamal.expenseshare.fragments.HomeClosedEventsFragment;
+import com.expense.tamal.expenseshare.fragments.HomeCurrentEventFragment;
 import com.expense.tamal.expenseshare.fragments.HomeNoEventsFragment;
 
 public class HomeActivity extends BaseActivity {
@@ -29,7 +30,7 @@ public class HomeActivity extends BaseActivity {
     public void initUI() {
         FragmentTransaction transaction = getSupportFragmentManager()
                 .beginTransaction();
-        transaction.replace(R.id.fragment_container, new HomeClosedEventsFragment());
+        transaction.replace(R.id.fragment_container, new HomeCurrentEventFragment());
         transaction.commit();
     }
 

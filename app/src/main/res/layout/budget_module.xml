@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/grid_spacing"
+    android:background="@color/white_opacity20"
+    tools:background="@color/black">
+
+    <include
+        android:id="@+id/budget_wheel"
+        layout="@layout/budget_cirle"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/budget_advice"
+        style="@style/Content.Small.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/grid_spacing_quadruple"
+        android:layout_toRightOf="@id/budget_wheel" />
+
+</RelativeLayout>
