@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/grid_spacing"
-    android:background="@color/white_opacity20"
     tools:background="@color/black">
 
     <include
