@@ -11,4 +11,7 @@
         <item>Calculate the cost</item>
     </string-array>
     <string name="home_message">Let the app worry about the calculations so that you can enjoy the finer things!</string>
+    <string name="items_header">Where did the money go</string>
+    <string name="items_header_add">Keep Spending</string>
+    <string name="members_header">Partners in crime</string>
 </resources>

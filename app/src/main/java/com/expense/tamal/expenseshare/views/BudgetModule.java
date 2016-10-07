@@ -75,15 +75,16 @@ public class BudgetModule extends RelativeLayout {
         inflate(getContext(), R.layout.budget_module, this);
         mAdviseView = (TextView) findViewById(R.id.budget_advice);
         budgetProgressCircle = (BudgetProgressCircle) findViewById(R.id.budget_circle);
-
+        budgetProgressCircle.setMarkerEnabled(false);
         setupViews();
     }
 
     private void setupViews() {
 
-        budgetProgressCircle.setProgressColor(Color.GREEN);
+        budgetProgressCircle.setProgressColor(getResources()
+                .getColor(R.color.indicator_green));
         budgetProgressCircle.setProgressBackgroundColor(getResources()
-                .getColor(R.color.grey));
+                .getColor(R.color.white_opacity30));
         budgetProgressCircle.setWheelSize(35);
 
     }

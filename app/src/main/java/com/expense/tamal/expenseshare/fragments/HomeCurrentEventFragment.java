@@ -6,11 +6,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 import com.expense.tamal.expenseshare.R;
@@ -28,18 +30,9 @@ public class HomeCurrentEventFragment extends Fragment {
     protected BudgetModule mBudgetModule;
     @BindView(R.id.scrollView)
     protected ScrollView scrollView;
+    @BindView(R.id.container)
+    protected LinearLayout mContainerLayout;
 
-    @BindView(R.id.testButton)
-    protected Button testButton;
-    private Handler mUpHandler = new Handler();
-
-    private Runnable animateUpImage = new Runnable() {
-
-        @Override
-        public void run() {
-            checkAndAnimatePOD();
-        }
-    };
 
     public HomeCurrentEventFragment() {
         // Required empty public constructor
@@ -53,16 +46,26 @@ public class HomeCurrentEventFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home_current_event, container, false);
         ButterKnife.bind(this, view);
         mBudgetModule.setupBudgetView(2000, 1000);
-
-        testButton.setOnClickListener(new View.OnClickListener() {
+        mBudgetModule.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
-            public void onClick(View v) {
+            public void onGlobalLayout() {
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                    mBudgetModule.getViewTreeObserver()
+                            .removeGlobalOnLayoutListener(this);
+                } else {
+                    mBudgetModule.getViewTreeObserver()
+                            .removeOnGlobalLayoutListener(this);
+                }
                 checkAndAnimatePOD();
             }
         });
+        initUI();
         return view;
     }
 
+    private void initUI(){
+
+    }
 
     private void checkAndAnimatePOD() {
         try {
