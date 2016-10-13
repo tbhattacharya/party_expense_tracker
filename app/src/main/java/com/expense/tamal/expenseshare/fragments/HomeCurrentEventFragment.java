@@ -45,7 +45,7 @@ public class HomeCurrentEventFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home_current_event, container, false);
         ButterKnife.bind(this, view);
-        mBudgetModule.setupBudgetView(2000, 1000);
+        mBudgetModule.setupBudgetView(2000, 1370);
         mBudgetModule.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
