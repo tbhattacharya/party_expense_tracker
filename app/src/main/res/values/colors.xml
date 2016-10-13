@@ -13,6 +13,7 @@
     <color name="shadow2">#66000000</color>
     <color name="shadow3">#33000000</color>
     <color name="indicator_green">#FF6AC73C</color>
+    <color name="iron">#CCCCCC</color>
 
     <!-- VSG colours -->
     <!-- Primary -->

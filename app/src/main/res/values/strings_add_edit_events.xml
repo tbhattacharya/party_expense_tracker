@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="event_name_hint">Something to remember by</string>
+    <string name="event_date_hint">When it happened</string>
+    <string name="event_type">Which type</string>
+
+</resources>
