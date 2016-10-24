@@ -51,7 +51,8 @@
             android:name=".activity.AddOrEditEventActivity"
             android:label="@string/title_activity_create_event"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.AddEditMembersActivity"></activity>
     </application>
 
 </manifest>

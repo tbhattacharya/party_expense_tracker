@@ -32,8 +32,6 @@ public class AddEventsFragment extends Fragment {
 
     @BindView(R.id.event_category)
     protected EditText eventCategory;
-    @BindView(R.id.event_image)
-    protected ImageButton takeImage;
 
     private ListPopupWindow lpw;
     private List<EventCategoryEnum> eventCategoryEnumList;

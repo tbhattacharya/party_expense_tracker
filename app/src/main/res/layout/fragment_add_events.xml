@@ -18,18 +18,12 @@
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/event_image"
-                android:background="@drawable/ic_menu_camera"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/steps_height" />
             <!-- Event Name Label -->
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/grid_spacing"
-                android:layout_marginTop="@dimen/grid_spacing"
-                android:elevation="@dimen/grid_spacing">
+                android:layout_marginTop="@dimen/grid_spacing">
 
                 <EditText
                     android:id="@+id/event_name"
@@ -40,9 +34,14 @@
                     android:inputType="textCapWords" />
             </android.support.design.widget.TextInputLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <!--  Event date Label -->
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp">
@@ -58,7 +57,8 @@
 
             <!--  Event type Label -->
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp">
@@ -72,6 +72,47 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/event_type" />
             </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <!--  Event budget Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/currency"
+                    tools:text="£"
+                    style="@style/Content.Large.White"
+                    android:textColor="@color/iron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/grid_spacing"/>
+
+                <EditText
+                    android:id="@+id/event_budget"
+                    style="@style/Content.Medium.White"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/event_budget" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/add_members_header"
+                android:text="@string/event_members"
+                style="@style/Content.Medium.White"
+                android:background="@color/white_opacity20"
+                android:textColor="@color/iron"
+                android:drawableRight="@android:drawable/ic_menu_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/grid_spacing"/>
+
+            <ListView
+                android:id="@+id/members_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
     </ScrollView>
